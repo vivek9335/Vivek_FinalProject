@@ -1,0 +1,93 @@
+/* CSS for partnership page  */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+nav {
+    background-image: url('../img/f.jpg');
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+header {
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:5cm;
+    background-color:rgb(180, 209, 238);
+    color: black;
+    padding: 50px;
+    font-family: Century Gothic, serif;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgb(192, 138, 138);
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    overflow: hidden;
+}
+
+footer{
+    background-image: url('../img/f.jpg');
+    clear: both;
+    padding: 20px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+#address{
+    text-align: left;
+    color: #fff;
+}
+
+#copyright{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    section {
+        width: 100%;
+    }
+}

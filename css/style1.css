@@ -1,0 +1,285 @@
+/* CSS for index page  */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+nav {
+    background-image: url('../img/f.jpg');
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+.side {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+header {
+     background-image: url('../img/logo.png'); /* from https://en.wikipedia.org/wiki/Domino%27s --> */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:5cm;
+    background-color:rgb(180, 209, 238);
+    color: black;
+    padding: 40px;
+    font-family: Century Gothic, serif;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgb(192, 138, 138);
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    overflow: hidden;
+}
+
+section {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+#h {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    color: #0047ab;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer{
+    background-image: url('../img/f.jpg');
+    clear: both;
+    padding: 20px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+#address {
+    text-align: left;
+    color: #fff;
+}
+
+#copyright{
+    text-align: center;
+}
+
+.poster {
+    transition: transform 0.3s ease-in-out;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+}
+
+section.animation-left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+section.animation-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+
+#packages_div section img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#destinations_div section img {
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#destinations,
+#packages {
+    text-align: center;
+    margin-top: 70px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(25, 151, 247);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#destinations_div section {
+    background-color: #ffffff;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#destinations_div {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+}
+
+#h {
+    margin-bottom: 30px;
+}
+
+#packages_div {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#packages_div section {
+    background-color: #ffffff;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CSS for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    nav {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    button {
+        width: 80px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #packages_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #packages_div section {
+        height: 520px;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    #destinations_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
